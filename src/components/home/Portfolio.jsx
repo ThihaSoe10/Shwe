@@ -30,13 +30,13 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="bg-white dark:bg-primary py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary dark:text-slateWhite mb-4">
             Demo Projects & MVPs
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto font-sans mb-6">
+          <p className="text-gray-500 dark:text-slate-300 max-w-2xl mx-auto font-sans mb-6">
             A quick look at practical product builds delivered for startups and growing teams.
           </p>
           <div className="w-24 h-1 bg-shweGold mx-auto rounded-full"></div>
@@ -49,7 +49,7 @@ const Portfolio = () => {
               className={`rounded-2xl p-8 transition-all duration-300 border ${
                 project.isImportant
                   ? 'bg-primary text-white border-primary shadow-lg'
-                  : 'bg-slateWhite border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2'
+                  : 'bg-slateWhite dark:bg-slate-900 border-gray-100 dark:border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-2'
               }`}
             >
               {project.isImportant && (
@@ -60,7 +60,7 @@ const Portfolio = () => {
               <h3 className="text-xl font-bold font-poppins mb-3">{project.title}</h3>
               <p
                 className={`text-sm leading-relaxed mb-7 ${
-                  project.isImportant ? 'text-white/90' : 'text-gray-600'
+                  project.isImportant ? 'text-white/90' : 'text-gray-600 dark:text-slate-300'
                 }`}
               >
                 {project.description}
@@ -70,7 +70,7 @@ const Portfolio = () => {
                 className={`px-5 py-2.5 text-sm font-semibold rounded-lg border transition-colors ${
                   project.isImportant
                     ? 'border-white text-white hover:bg-white hover:text-primary'
-                    : 'border-primary text-primary hover:bg-primary hover:text-white'
+                    : 'border-primary text-primary dark:text-slateWhite hover:bg-primary hover:text-white dark:hover:text-white'
                 }`}
               >
                 View Demo

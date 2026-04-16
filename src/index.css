@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-slateWhite text-primary antialiased;
+    @apply bg-slateWhite text-primary antialiased dark:bg-primary dark:text-slateWhite;
   }
   
   h1, h2, h3, h4, h5, h6 {

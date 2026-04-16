@@ -32,20 +32,20 @@ const reasons = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-primary">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0A192F] mb-4">Why Choose Us</h2>
-          <div className="w-24 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-slateWhite mb-4">Why Choose Us</h2>
+          <div className="w-24 h-1 bg-shweGold mx-auto rounded-full"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
-            <div key={index} className="bg-[#F8FAFC] p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 hover:border-[#D4AF37]/30 group">
-              <div className="w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-gray-50">
+            <div key={index} className="bg-slateWhite dark:bg-slate-900 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 dark:border-white/10 hover:border-shweGold/30 group">
+              <div className="w-16 h-16 bg-white dark:bg-slate-950 rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border border-gray-50 dark:border-white/10">
                 {reason.icon}
               </div>
-              <h3 className="text-xl font-semibold text-[#0A192F] mb-4 leading-relaxed font-myanmar">{reason.title}</h3>
-              <p className="text-gray-600 leading-relaxed font-myanmar">
+              <h3 className="text-xl font-semibold text-primary dark:text-slateWhite mb-4 leading-relaxed font-myanmar">{reason.title}</h3>
+              <p className="text-gray-600 dark:text-slate-300 leading-relaxed font-myanmar">
                 {reason.description}
               </p>
             </div>
