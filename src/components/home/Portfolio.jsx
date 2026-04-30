@@ -69,7 +69,7 @@ const Portfolio = () => {
                 type="button"
                 className={`px-5 py-2.5 text-sm font-semibold rounded-lg border transition-colors ${
                   project.isImportant
-                    ? 'border-white text-white hover:bg-white hover:text-primary'
+                    ? 'border-shweGold text-shweGold hover:bg-shweGold hover:text-black'
                     : 'border-primary text-primary dark:text-slateWhite hover:bg-primary hover:text-white dark:hover:text-white'
                 }`}
               >

@@ -10,14 +10,11 @@ export default function Footer() {
           </p>
 
           <div className="flex md:justify-center gap-4 text-sm">
-            <a href="#" className="text-slate-300 hover:text-shweGold transition-colors">
-              Facebook
-            </a>
-            <a href="#" className="text-slate-300 hover:text-shweGold transition-colors">
-              LinkedIn
-            </a>
-            <a href="#" className="text-slate-300 hover:text-shweGold transition-colors">
+            <a href="https://t.me/ShwepilotITsolution" target="_blank" rel="noreferrer" className="text-slate-300 hover:text-shweGold transition-colors">
               Telegram
+            </a>
+            <a href="http://tiktok.com/@shwe.pilot.ai" target="_blank" rel="noreferrer" className="text-slate-300 hover:text-shweGold transition-colors">
+              TikTok
             </a>
           </div>
 
